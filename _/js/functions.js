@@ -2,8 +2,8 @@
 // ***********************************************
 // Change to the date of your site launch
 // 
-var year    = 2012;
-var month   = 10;
+var year    = 2013;
+var month   = 1;
 var day     = 25;
 
 // Don't Change below this line unless you know what you are doing.
