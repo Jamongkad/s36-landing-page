@@ -2,13 +2,15 @@
 
 require 'vendor/autoload.php';
 
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(array(
+    'templates.path' => './views'
+));
 
-$app->get('/', function() {
-    echo "Hello World";
+$app->get('/', function() use ($app) {
+    $app->render('my_index.php'); 
 });
 
-$app->get('/hello/:name', function($name) {
+$app->get('/hello/:name', function($name) use ($app) {
     echo "Hello, $name";
 });
 
